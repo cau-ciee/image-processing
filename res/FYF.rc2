@@ -1,0 +1,24 @@
+//
+// FYF.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SKINMAGIC
+//
+
+XPBLUE                  SKINMAGIC DISCARDABLE   "res\\xpblue.smf"
+CORONA                  SKINMAGIC DISCARDABLE   "res\\corona.smf"
+XPGREAN                 SKINMAGIC DISCARDABLE   "res\\xpgrean.smf"
+XPLUS                   SKINMAGIC DISCARDABLE   "res\\x-plus.smf"
+DEVIOR                  SKINMAGIC DISCARDABLE   "res\\Devior.smf"
+XPSTEEL                 SKINMAGIC DISCARDABLE   "res\\xpsteel.smf"
+KROMO                   SKINMAGIC DISCARDABLE   "res\\Kromo.smf"
