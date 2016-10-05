@@ -14,43 +14,43 @@
 class CDib : public CObject  
 {
 public:
-	CDib();
-	virtual ~CDib();
+  CDib();
+  virtual ~CDib();
 //操作
 public:
-	//用于操作DIB的函数声明
-	BOOL   DrawDib(HDC,LPRECT,HGLOBAL,LPRECT,CPalette*); //显示位图
+  //用于操作DIB的函数声明
+  BOOL   DrawDib(HDC,LPRECT,HGLOBAL,LPRECT,CPalette*); //显示位图
     BOOL   ConstructPalette(HGLOBAL,CPalette*);          //构造逻辑调色板
-	LPSTR  GetBits(LPSTR);                               //取得位图的数据入口
-	DWORD  GetWidth(LPSTR);                              //取得位图的宽度
-	DWORD  GetHeight(LPSTR);                             //取得位图的高度
-	WORD   GetPalSize(LPSTR);                            //取得调色板的大小
-	WORD   GetColorNum(LPSTR);                           //取得位图包含的颜色数目
-	WORD   GetBitCount(LPSTR);                           //取得位图的颜色深度
-	HGLOBAL CopyObject(HGLOBAL);                         //用于复制位图对象
+  LPSTR  GetBits(LPSTR);                               //取得位图的数据入口
+  DWORD  GetWidth(LPSTR);                              //取得位图的宽度
+  DWORD  GetHeight(LPSTR);                             //取得位图的高度
+  WORD   GetPalSize(LPSTR);                            //取得调色板的大小
+  WORD   GetColorNum(LPSTR);                           //取得位图包含的颜色数目
+  WORD   GetBitCount(LPSTR);                           //取得位图的颜色深度
+  HGLOBAL CopyObject(HGLOBAL);                         //用于复制位图对象
 
-	BOOL   SaveFile(HGLOBAL , CFile&);                    //存储位图为文件
-	HGLOBAL   LoadFile(CFile&);                          //从文件中加载位图
+  BOOL   SaveFile(HGLOBAL , CFile&);                    //存储位图为文件
+  HGLOBAL   LoadFile(CFile&);                          //从文件中加载位图
 
 
-//	设计函数GetRequireWidth，来处理针对位图的字节宽度必须是4的倍数的这一要求
-	int     GetReqByteWidth(int );                     //转换后的字节数GetRequireByteWidth
-	long    GetRectWidth(LPCRECT );                    //取得区域的宽度
-	long    GetRectHeight(LPCRECT);                    //取得区域的高度
+//  设计函数GetRequireWidth，来处理针对位图的字节宽度必须是4的倍数的这一要求
+  int     GetReqByteWidth(int );                     //转换后的字节数GetRequireByteWidth
+  long    GetRectWidth(LPCRECT );                    //取得区域的宽度
+  long    GetRectHeight(LPCRECT);                    //取得区域的高度
 public:
-	void ClearMemory();
-	void InitMembers();
+  void ClearMemory();
+  void InitMembers();
 public:
-	LPBITMAPINFO        lpbminfo;	// 指向BITMAPINFO结构的指针
-	LPBITMAPINFOHEADER  lpbmihrd;	//指向BITMAPINFOHEADER结构的指针
-	BITMAPFILEHEADER	bmfHeader;  //BITMAPFILEHEADER结构
-	LPSTR				lpdib;      //指向DIB的指针
-	LPSTR				lpDIBBits;  // DIB像素指针
-	DWORD				dwDIBSize;  //DIB大小
+  LPBITMAPINFO        lpbminfo; // 指向BITMAPINFO结构的指针
+  LPBITMAPINFOHEADER  lpbmihrd; //指向BITMAPINFOHEADER结构的指针
+  BITMAPFILEHEADER  bmfHeader;  //BITMAPFILEHEADER结构
+  LPSTR       lpdib;      //指向DIB的指针
+  LPSTR       lpDIBBits;  // DIB像素指针
+  DWORD       dwDIBSize;  //DIB大小
 
-	HGLOBAL				m_hDib;//DIB对象的句柄
-	
-	RGBQUAD*			lpRgbQuag;//指向颜色表的指针
+  HGLOBAL       m_hDib;//DIB对象的句柄
+  
+  RGBQUAD*      lpRgbQuag;//指向颜色表的指针
 };
 
 #endif // !defined(AFX_DIB_H__DAEA04C7_4542_46FD_BEB4_41F60281AE96__INCLUDED_)

@@ -16,28 +16,28 @@ static char THIS_FILE[] = __FILE__;
 
 
 CLowpassFilDlg::CLowpassFilDlg(CWnd* pParent /*=NULL*/)
-	: CDialog(CLowpassFilDlg::IDD, pParent)
+  : CDialog(CLowpassFilDlg::IDD, pParent)
 {
-	//{{AFX_DATA_INIT(CLowpassFilDlg)
-	m_lowfreq2 = 0;
-	m_lowfreq1 = 0;
-	//}}AFX_DATA_INIT
+  //{{AFX_DATA_INIT(CLowpassFilDlg)
+  m_lowfreq2 = 0;
+  m_lowfreq1 = 0;
+  //}}AFX_DATA_INIT
 }
 
 
 void CLowpassFilDlg::DoDataExchange(CDataExchange* pDX)
 {
-	CDialog::DoDataExchange(pDX);
-	//{{AFX_DATA_MAP(CLowpassFilDlg)
-	DDX_Text(pDX, IDC_EDIT2, m_lowfreq2);
-	DDX_Text(pDX, IDC_EDIT1, m_lowfreq1);
-	//}}AFX_DATA_MAP
+  CDialog::DoDataExchange(pDX);
+  //{{AFX_DATA_MAP(CLowpassFilDlg)
+  DDX_Text(pDX, IDC_EDIT2, m_lowfreq2);
+  DDX_Text(pDX, IDC_EDIT1, m_lowfreq1);
+  //}}AFX_DATA_MAP
 }
 
 
 BEGIN_MESSAGE_MAP(CLowpassFilDlg, CDialog)
-	//{{AFX_MSG_MAP(CLowpassFilDlg)
-	//}}AFX_MSG_MAP
+  //{{AFX_MSG_MAP(CLowpassFilDlg)
+  //}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
@@ -45,13 +45,13 @@ END_MESSAGE_MAP()
 
 void CLowpassFilDlg::OnOK() 
 {
-	// TODO: Add extra validation here
-	UpdateData(true);
-	if(m_lowfreq1>255||m_lowfreq1<0||m_lowfreq2>255||m_lowfreq2<0)
-	{
-		AfxMessageBox ("所设频率参数不正确!",MB_OK);
-		return;
-	}
-		
-	CDialog::OnOK();
+  // TODO: Add extra validation here
+  UpdateData(true);
+  if(m_lowfreq1>255||m_lowfreq1<0||m_lowfreq2>255||m_lowfreq2<0)
+  {
+    AfxMessageBox ("所设频率参数不正确!",MB_OK);
+    return;
+  }
+    
+  CDialog::OnOK();
 }

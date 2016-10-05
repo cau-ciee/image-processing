@@ -14,34 +14,34 @@ class CThreDivDlg : public CDialog
 {
 // Construction
 public:
-	CThreDivDlg(CWnd* pParent = NULL);   // standard constructor
+  CThreDivDlg(CWnd* pParent = NULL);   // standard constructor
 
 // Dialog Data
-	//{{AFX_DATA(CThreDivDlg)
-	enum { IDD = IDD_THREDivDlg };
-	CEdit	m_visible;
-	int		m_threshold;
-	int		m_type;
-	//}}AFX_DATA
+  //{{AFX_DATA(CThreDivDlg)
+  enum { IDD = IDD_THREDivDlg };
+  CEdit m_visible;
+  int   m_threshold;
+  int   m_type;
+  //}}AFX_DATA
 
 
 // Overrides
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(CThreDivDlg)
-	protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
-	//}}AFX_VIRTUAL
+  // ClassWizard generated virtual function overrides
+  //{{AFX_VIRTUAL(CThreDivDlg)
+  protected:
+  virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+  //}}AFX_VIRTUAL
 
 // Implementation
 protected:
 
-	// Generated message map functions
-	//{{AFX_MSG(CThreDivDlg)
-	virtual void OnOK();
-	afx_msg void OnRadio1();
-	afx_msg void OnRadio2();
-	//}}AFX_MSG
-	DECLARE_MESSAGE_MAP()
+  // Generated message map functions
+  //{{AFX_MSG(CThreDivDlg)
+  virtual void OnOK();
+  afx_msg void OnRadio1();
+  afx_msg void OnRadio2();
+  //}}AFX_MSG
+  DECLARE_MESSAGE_MAP()
 };
 
 //{{AFX_INSERT_LOCATION}}

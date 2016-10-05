@@ -14,31 +14,31 @@ class CHigpassFilDlg : public CDialog
 {
 // Construction
 public:
-	CHigpassFilDlg(CWnd* pParent = NULL);   // standard constructor
+  CHigpassFilDlg(CWnd* pParent = NULL);   // standard constructor
 
 // Dialog Data
-	//{{AFX_DATA(CHigpassFilDlg)
-	enum { IDD = IDD_HIGHPASS_FILTER };
-	int		m_highfreq1;
-	int		m_highfreq2;
-	//}}AFX_DATA
+  //{{AFX_DATA(CHigpassFilDlg)
+  enum { IDD = IDD_HIGHPASS_FILTER };
+  int   m_highfreq1;
+  int   m_highfreq2;
+  //}}AFX_DATA
 
 
 // Overrides
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(CHigpassFilDlg)
-	protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
-	//}}AFX_VIRTUAL
+  // ClassWizard generated virtual function overrides
+  //{{AFX_VIRTUAL(CHigpassFilDlg)
+  protected:
+  virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+  //}}AFX_VIRTUAL
 
 // Implementation
 protected:
 
-	// Generated message map functions
-	//{{AFX_MSG(CHigpassFilDlg)
-	virtual void OnOK();
-	//}}AFX_MSG
-	DECLARE_MESSAGE_MAP()
+  // Generated message map functions
+  //{{AFX_MSG(CHigpassFilDlg)
+  virtual void OnOK();
+  //}}AFX_MSG
+  DECLARE_MESSAGE_MAP()
 };
 
 //{{AFX_INSERT_LOCATION}}

@@ -16,28 +16,28 @@ static char THIS_FILE[] = __FILE__;
 
 
 CHigpassFilDlg::CHigpassFilDlg(CWnd* pParent /*=NULL*/)
-	: CDialog(CHigpassFilDlg::IDD, pParent)
+  : CDialog(CHigpassFilDlg::IDD, pParent)
 {
-	//{{AFX_DATA_INIT(CHigpassFilDlg)
-	m_highfreq1 = 0;
-	m_highfreq2 = 0;
-	//}}AFX_DATA_INIT
+  //{{AFX_DATA_INIT(CHigpassFilDlg)
+  m_highfreq1 = 0;
+  m_highfreq2 = 0;
+  //}}AFX_DATA_INIT
 }
 
 
 void CHigpassFilDlg::DoDataExchange(CDataExchange* pDX)
 {
-	CDialog::DoDataExchange(pDX);
-	//{{AFX_DATA_MAP(CHigpassFilDlg)
-	DDX_Text(pDX, IDC_EDIT1, m_highfreq1);
-	DDX_Text(pDX, IDC_EDIT2, m_highfreq2);
-	//}}AFX_DATA_MAP
+  CDialog::DoDataExchange(pDX);
+  //{{AFX_DATA_MAP(CHigpassFilDlg)
+  DDX_Text(pDX, IDC_EDIT1, m_highfreq1);
+  DDX_Text(pDX, IDC_EDIT2, m_highfreq2);
+  //}}AFX_DATA_MAP
 }
 
 
 BEGIN_MESSAGE_MAP(CHigpassFilDlg, CDialog)
-	//{{AFX_MSG_MAP(CHigpassFilDlg)
-	//}}AFX_MSG_MAP
+  //{{AFX_MSG_MAP(CHigpassFilDlg)
+  //}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
@@ -45,13 +45,13 @@ END_MESSAGE_MAP()
 
 void CHigpassFilDlg::OnOK() 
 {
-	// TODO: Add extra validation here
-	UpdateData(true);
-	if(m_highfreq1>255||m_highfreq1<0||m_highfreq2>255||m_highfreq2<0)
-	{
-		AfxMessageBox ("所设频率参数不正确!",MB_OK);
-		return;
-	}
-		
-	CDialog::OnOK();
+  // TODO: Add extra validation here
+  UpdateData(true);
+  if(m_highfreq1>255||m_highfreq1<0||m_highfreq2>255||m_highfreq2<0)
+  {
+    AfxMessageBox ("所设频率参数不正确!",MB_OK);
+    return;
+  }
+    
+  CDialog::OnOK();
 }

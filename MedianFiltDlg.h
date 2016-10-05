@@ -14,38 +14,38 @@ class CMedianFiltDlg : public CDialog
 {
 // Construction
 public:
-	CMedianFiltDlg(CWnd* pParent = NULL);   // standard constructor
+  CMedianFiltDlg(CWnd* pParent = NULL);   // standard constructor
 
 // Dialog Data
-	//{{AFX_DATA(CMedianFiltDlg)
-	enum { IDD = IDD_MEDIAN_FILTER };
-	int		m_mediantype;
-	int		mFilterH;
-	int		mFilterW; 
-	int		mFilterMX;
-	int		mFilterMY;
-		// NOTE: the ClassWizard will add data members here
-	//}}AFX_DATA
+  //{{AFX_DATA(CMedianFiltDlg)
+  enum { IDD = IDD_MEDIAN_FILTER };
+  int   m_mediantype;
+  int   mFilterH;
+  int   mFilterW; 
+  int   mFilterMX;
+  int   mFilterMY;
+    // NOTE: the ClassWizard will add data members here
+  //}}AFX_DATA
 
 
 // Overrides
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(CMedianFiltDlg)
-	protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
-	//}}AFX_VIRTUAL
+  // ClassWizard generated virtual function overrides
+  //{{AFX_VIRTUAL(CMedianFiltDlg)
+  protected:
+  virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+  //}}AFX_VIRTUAL
 
 // Implementation
 protected:
 
-	// Generated message map functions
-	//{{AFX_MSG(CMedianFiltDlg)
-	virtual void OnOK();
-	afx_msg void OnRadio1();
-	afx_msg void OnRadio2();
-	afx_msg void OnRadio3();
-	//}}AFX_MSG
-	DECLARE_MESSAGE_MAP()
+  // Generated message map functions
+  //{{AFX_MSG(CMedianFiltDlg)
+  virtual void OnOK();
+  afx_msg void OnRadio1();
+  afx_msg void OnRadio2();
+  afx_msg void OnRadio3();
+  //}}AFX_MSG
+  DECLARE_MESSAGE_MAP()
 };
 
 //{{AFX_INSERT_LOCATION}}

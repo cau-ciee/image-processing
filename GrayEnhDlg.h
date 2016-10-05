@@ -14,33 +14,33 @@ class CGrayEnhDlg : public CDialog
 {
 // Construction
 public:
-	CGrayEnhDlg(CWnd* pParent = NULL);   // standard constructor
+  CGrayEnhDlg(CWnd* pParent = NULL);   // standard constructor
 
 // Dialog Data
-	//{{AFX_DATA(CGrayEnhDlg)
-	enum { IDD = IDD_GRAY_ENHANCEDlg };
-	int		m_oralow;
-	int		m_orahig;
-	int		m_newhig;
-	int		m_newlow;
-	//}}AFX_DATA
+  //{{AFX_DATA(CGrayEnhDlg)
+  enum { IDD = IDD_GRAY_ENHANCEDlg };
+  int   m_oralow;
+  int   m_orahig;
+  int   m_newhig;
+  int   m_newlow;
+  //}}AFX_DATA
 
 
 // Overrides
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(CGrayEnhDlg)
-	protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
-	//}}AFX_VIRTUAL
+  // ClassWizard generated virtual function overrides
+  //{{AFX_VIRTUAL(CGrayEnhDlg)
+  protected:
+  virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+  //}}AFX_VIRTUAL
 
 // Implementation
 protected:
 
-	// Generated message map functions
-	//{{AFX_MSG(CGrayEnhDlg)
-	virtual void OnOK();
-	//}}AFX_MSG
-	DECLARE_MESSAGE_MAP()
+  // Generated message map functions
+  //{{AFX_MSG(CGrayEnhDlg)
+  virtual void OnOK();
+  //}}AFX_MSG
+  DECLARE_MESSAGE_MAP()
 };
 
 //{{AFX_INSERT_LOCATION}}

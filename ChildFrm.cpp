@@ -18,10 +18,10 @@ static char THIS_FILE[] = __FILE__;
 IMPLEMENT_DYNCREATE(CChildFrame, CMDIChildWnd)
 
 BEGIN_MESSAGE_MAP(CChildFrame, CMDIChildWnd)
-	//{{AFX_MSG_MAP(CChildFrame)
-		// NOTE - the ClassWizard will add and remove mapping macros here.
-		//    DO NOT EDIT what you see in these blocks of generated code !
-	//}}AFX_MSG_MAP
+  //{{AFX_MSG_MAP(CChildFrame)
+    // NOTE - the ClassWizard will add and remove mapping macros here.
+    //    DO NOT EDIT what you see in these blocks of generated code !
+  //}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
@@ -29,8 +29,8 @@ END_MESSAGE_MAP()
 
 CChildFrame::CChildFrame()
 {
-	// TODO: add member initialization code here
-	
+  // TODO: add member initialization code here
+  
 }
 
 CChildFrame::~CChildFrame()
@@ -39,15 +39,15 @@ CChildFrame::~CChildFrame()
 
 BOOL CChildFrame::PreCreateWindow(CREATESTRUCT& cs)
 {
-	// TODO: Modify the Window class or styles here by modifying
-	//  the CREATESTRUCT cs
-	cs.cx=1024;
-	cs.cy=768;
+  // TODO: Modify the Window class or styles here by modifying
+  //  the CREATESTRUCT cs
+  cs.cx=1024;
+  cs.cy=768;
 
-	if( !CMDIChildWnd::PreCreateWindow(cs) )
-		return FALSE;
+  if( !CMDIChildWnd::PreCreateWindow(cs) )
+    return FALSE;
 
-	return TRUE;
+  return TRUE;
 }
 
 
@@ -58,12 +58,12 @@ BOOL CChildFrame::PreCreateWindow(CREATESTRUCT& cs)
 #ifdef _DEBUG
 void CChildFrame::AssertValid() const
 {
-	CMDIChildWnd::AssertValid();
+  CMDIChildWnd::AssertValid();
 }
 
 void CChildFrame::Dump(CDumpContext& dc) const
 {
-	CMDIChildWnd::Dump(dc);
+  CMDIChildWnd::Dump(dc);
 }
 
 #endif //_DEBUG
